@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Tiptap from './Tiptap.jsx'
+import Tiptap from './Tiptap.tsx'
 import MenuBar from './MenuBar.jsx'
 import { useEffect } from 'react';
 
@@ -18,22 +18,23 @@ function App() {
   }
       
   return (
-    <div class="App-header">
+    <div>
       <div class="row">
         <div className='col align-self-center'>
           <h3 class="text-center">Let it all out here. It's for your eyes only.</h3>
-          <form className='text-center'>
-            {/* <MenuBar /> */}
-            {/* <Tiptap /> */}
-            <textarea class="form-control" rows="20" id='Textarea' placeholder="start typing what's on your mind"></textarea>
-            <div>
-              <input class="col align-self-center" className='Input' type="submit" value="Let it go." onClick={fogNation}/>
-            </div>
-            
-          </form>
+          {/* <form className='text-center'> */}
+            <MenuBar />
+            <Tiptap />
+            {/* <textarea class="form-control" rows="20" id='Textarea' placeholder="start typing what's on your mind"></textarea> */}
+            {/* <div> */}
+              {/* <input class="col align-self-center" className='Input' type="submit" value="Let it go." onClick={fogNation}/> */}
+            {/* </div> */}
+
+          {/* </form> */}
         </div>
-        
+
       </div>
+        {/* <Tiptap /> */}
     </div>
   );
 }
